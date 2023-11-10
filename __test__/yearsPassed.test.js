@@ -5,5 +5,6 @@ describe("AgeCalculator", () => {
 
   beforeEach(() => {
     calculator = new AgeCalculator(56)
-  })
-})
+  });
+  
+});
