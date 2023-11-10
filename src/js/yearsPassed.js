@@ -17,8 +17,12 @@ export default class AgeCalculator {
     const yearsPassedEarth = this.age - age;
     return {
       earth: yearsPassedEarth,
-      mercury: this.calculateAgeOnPlanet('mercury') - (age / this.planetaryRatios['mercury']),
-      venus: this.calculateAgeOnPlanet('venus') - (age / this.planetaryRatios['venus']),
-    }
+      mercury: this.calculateAgeOnPlanet("mercury") - (age / this.planetaryRatios["mercury"]),
+      venus: this.calculateAgeOnPlanet("venus") - (age / this.planetaryRatios["venus"]),
+      mars: this.calculateAgeOnPlanet("mars") - (age / this.planetaryRatios["mars"]),
+      jupiter: this.calculateAgeOnPlanet("jupiter") - (age / this.planetaryRatios["jupiter"])
+    };
   }
+
+  
 }
