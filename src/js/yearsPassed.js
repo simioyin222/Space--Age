@@ -6,15 +6,15 @@ export default class AgeCalculator {
       venus: 0.62,
       mars: 1.88,
       jupiter: 11.86,
-    }
+    };
   }
 
   calculateAgeOnPlanet(planet) {
-    return this.age / this.planetaryRatios[planet]
+    return this.age / this.planetaryRatios[planet];
   }
 
   yearsSince(age) {
-    const yearsPassedEarth = this.age - age
+    const yearsPassedEarth = this.age - age;
     return {
       earth: yearsPassedEarth,
       mercury:
@@ -28,11 +28,14 @@ export default class AgeCalculator {
       jupiter:
         this.calculateAgeOnPlanet("jupiter") -
         age / this.planetaryRatios["jupiter"],
-    }
+    };
   }
 
   yearsUntil(age) {
-    const yearsToEarth = age - this.age
-    return {}
+    const yearsToEarth = age - this.age;
+    return {
+      earth: yearsToEarth,
+        
+    };
   }
 }
