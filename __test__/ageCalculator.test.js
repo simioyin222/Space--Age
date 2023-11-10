@@ -5,4 +5,9 @@ describe('AgeCalculator', () => {
     const ageCalculator = new AgeCalculator(30);
     expect(ageCalculator.mercuryAge()).toEqual(7.2);
   });
+  test('should correctly return age in Mars years', () => {
+    const ageCalculator = new AgeCalculator(30);
+    expect(ageCalculator.marsAge()).toEqual(56.4);
+  });
 });
+
