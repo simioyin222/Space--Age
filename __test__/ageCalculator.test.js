@@ -1,8 +1,8 @@
-// import { Function } from './../src/js/template.js';
+import AgeCalculator from '../src/js/ageCalculator';
 
-// describe('Template Function', () => {
-
-//   test('should do this behavior', () => {
-//     // expect(functionAnswer).toEqual(expectedAnswer);
-//   });
-// });
+describe('AgeCalculator', () => {
+  test('should correctly return age in Mercury years', () => {
+    const ageCalculator = new AgeCalculator(30);
+    expect(ageCalculator.mercuryAge()).toEqual(7.2);
+  });
+});
