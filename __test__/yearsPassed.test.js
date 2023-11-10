@@ -11,7 +11,7 @@ describe("AgeCalculator", () => {
     expect(yearsPassed.earth).toEqual(13);
     expect(yearsPassed.mercury).toEqual(54.16666666666666);
     expect(yearsPassed.venus).toEqual(20.967741935483872);
-    expect(yearsPassed.mars).toEqual(6.91);
-    expect(yearsPassed.jupiter).toEqual(1.09);
+    expect(yearsPassed.mars).toEqual(6.914893617021278);
+    expect(yearsPassed.jupiter).toEqual(1.0961214165261386);
   });
 });
