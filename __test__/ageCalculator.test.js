@@ -9,5 +9,9 @@ describe('AgeCalculator', () => {
     const ageCalculator = new AgeCalculator(30);
     expect(ageCalculator.marsAge()).toEqual(56.4);
   });
+  test('should correctly return age in Venus years', () => {
+    const ageCalculator = new AgeCalculator(30);
+    expect(ageCalculator.venusAge()).toEqual(18.6);
+  });
 });
 
