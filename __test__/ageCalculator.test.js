@@ -18,7 +18,3 @@ describe("AgeCalculator", () => {
     expect(ageCalculator.jupiterAge()).toEqual(355.8);
   });
 });
-
-test('should correctly calculate years passed since age 43 on all planets', () => {
-  const yearsPassed = calculator.yearsSince(43);
-});
