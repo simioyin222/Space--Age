@@ -18,6 +18,7 @@ export default class AgeCalculator {
     return {
       earth: yearsPassedEarth,
       mercury: this.calculateAgeOnPlanet('mercury') - (age / this.planetaryRatios['mercury']),
+      venus: this.calculateAgeOnPlanet('venus') - (age / this.planetaryRatios['venus']),
     }
   }
 }
