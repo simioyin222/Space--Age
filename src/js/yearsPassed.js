@@ -34,8 +34,7 @@ export default class AgeCalculator {
   yearsUntil(age) {
     const yearsToEarth = age - this.age;
     return {
-      earth: yearsToEarth,
-        
+      earth: yearsToEarth, 
     };
   }
 }
