@@ -23,4 +23,11 @@ export default class AgeCalculator {
       jupiter: this.calculateAgeOnPlanet("jupiter") - (age / this.planetaryRatios["jupiter"])
     };
   }
+
+  yearsUntil(age) {
+    const yearsToEarth = age - this.age;
+    return {
+      earth: yearsToEarth,
+    };
+  }
 }
