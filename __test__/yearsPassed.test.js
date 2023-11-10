@@ -19,6 +19,7 @@ describe("AgeCalculator", () => {
   test("should correctly calculate years until age 61 on all planets", () => {
     const yearsUntil = calculator.yearsUntil(61);
     expect(yearsUntil.earth).toEqual(5);
-    expect(yearsUntil.mercury).toEqual(20.83);
+    expect(yearsUntil.mercury).toEqual(20.833333333333343);
+    expect(yearsUntil.venus).toEqual(8.06);
   });
 });
