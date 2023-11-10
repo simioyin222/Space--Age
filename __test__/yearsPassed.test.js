@@ -14,4 +14,10 @@ describe("AgeCalculator", () => {
     expect(yearsPassed.mars).toEqual(6.914893617021278);
     expect(yearsPassed.jupiter).toEqual(1.0961214165261386);
   });
+
+  test("should correctly calculate years until age 61 on all planets", () => {
+    const yearsUntil = calulator.yearsUntil(61);
+  }
+
+  )
 });
