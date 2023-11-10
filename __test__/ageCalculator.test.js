@@ -15,7 +15,7 @@ describe('AgeCalculator', () => {
   });
   test('should correctly return age in Jupiter years', () => {
     const ageCalculator = new AgeCalculator(30);
-    expect(ageCalculator.venusAge()).toEqual(18.6);
+    expect(ageCalculator.jupiterAge()).toEqual(355.8);
   });
 });
 
