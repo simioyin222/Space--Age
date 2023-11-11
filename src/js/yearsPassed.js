@@ -14,7 +14,7 @@ export default class AgeCalculator {
   }
 
   yearsSince(age) {
-    const yearsPassedEarth = this.age - age;
+    const yearsPassedEarth = this.age - age
     return {
       earth: yearsPassedEarth,
       mercury:
@@ -28,15 +28,24 @@ export default class AgeCalculator {
       jupiter:
         this.calculateAgeOnPlanet("jupiter") -
         age / this.planetaryRatios["jupiter"],
-    };
+    }
   }
 
   yearsUntil(age) {
-    const yearsToEarth = age - this.age;
+    const yearsToEarth = age - this.age
     return {
       earth: yearsToEarth,
-      mercury: (age / this.planetaryRatios["mercury"]) - this.calculateAgeOnPlanet("mercury"),
-      venus: (age / this.planetaryRatios["venus"]) - this.calculateAgeOnPlanet("venus"),
-    };
+      mercury:
+        age / this.planetaryRatios["mercury"] -
+        this.calculateAgeOnPlanet("mercury"),
+      venus:
+        age / this.planetaryRatios["venus"] -
+        this.calculateAgeOnPlanet("venus"),
+      mars:
+        age / this.planetaryRatios["mars"] - this.calculateAgeOnPlanet("mars"),
+      jupiter:
+        age / this.planetaryRatios["jupiter"] -
+        this.calculateAgeOnPlanet("jupiter"),
+    }
   }
 }
