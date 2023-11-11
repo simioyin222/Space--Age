@@ -20,6 +20,8 @@ describe("AgeCalculator", () => {
     const yearsUntil = calculator.yearsUntil(61);
     expect(yearsUntil.earth).toEqual(5);
     expect(yearsUntil.mercury).toEqual(20.833333333333343);
-    expect(yearsUntil.venus).toEqual(8.06);
+    expect(yearsUntil.venus).toEqual(8.064516129032256);
+    expect(yearsUntil.mars).toEqual(2.65);
+    expect(yearsUntil.jupiter).toEqual(0.42);
   });
 });
